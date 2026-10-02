@@ -1,0 +1,99 @@
+:root {
+ --primary: #b5122b;
+ --primary-dark: #7f0d1f;
+ --ink: #172033;
+ --muted: #667085;
+ --surface: #ffffff;
+ --soft: #f6f7fb;
+ --line: #e4e7ec;
+ --success: #147a50;
+}
+* { box-sizing: border-box; }
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ color: var(--ink);
+ background: var(--surface);
+ line-height: 1.6;
+}
+a { color: inherit; }
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.site-header {
+ position: sticky;
+ top: 0;
+ z-index: 10;
+ background: rgba(255,255,255,.96);
+ border-bottom: 1px solid var(--line);
+}
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 76px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-mark {
+ display: grid; place-items: center;
+ width: 44px; height: 44px;
+ border-radius: 12px;
+ background: var(--primary);
+ color: #fff; font-weight: 800;
+}
+.brand small { display: block; color: var(--muted); }
+.main-nav { display: flex; gap: 10px; flex-wrap: wrap; }
+.main-nav a { text-decoration: none; padding: 9px 12px; border-radius: 9px; color: var(--muted); }
+.main-nav a:hover, .main-nav a.active { background: #fff0f2; color: var(--primary); }
+.hero {
+ padding: 78px 0;
+ background: linear-gradient(135deg, #fff2f4, #f8f9fc 55%, #eef2ff);
+}
+.hero-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 40px; align-items: center; }
+.eyebrow { color: var(--primary); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: clamp(2.1rem, 5vw, 4rem); margin: 12px 0 18px; }
+h2 { font-size: 2rem; margin-top: 0; }
+.lead { color: var(--muted); font-size: 1.1rem; max-width: 720px; }
+.actions { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+.btn { display: inline-block; text-decoration: none; border: 0; cursor: pointer; padding: 12px 18px; border-radius: 10px; font-weight: 700; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-outline { border: 1px solid var(--line); background: #fff; color: var(--ink); }
+.hero-card, .card {
+ background: #fff;
+ border: 1px solid var(--line);
+ border-radius: 18px;
+ padding: 24px;
+ box-shadow: 0 12px 30px rgba(16,24,40,.06);
+}
+.hero-stat { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 18px; }
+.stat { background: var(--soft); border-radius: 14px; padding: 16px; }
+.stat strong { display: block; font-size: 1.5rem; color: var(--primary); }
+.section { padding: 64px 0; }
+.section-soft { background: var(--soft); }
+.section-heading { margin-bottom: 28px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.card p { color: var(--muted); }
+.badge { display: inline-block; padding: 5px 10px; border-radius: 999px; background: #fff0f2; color: var(--primary); font-size:
+.85rem; font-weight: 700; }
+.meta { color: var(--muted); font-size: .9rem; }
+.article-body { max-width: 820px; }
+.form-group { margin-bottom: 16px; }
+label { display: block; margin-bottom: 6px; font-weight: 700; }
+input, textarea {
+ width: 100%;
+ padding: 12px 13px;
+ border: 1px solid #cfd4dc;
+ border-radius: 9px;
+ font: inherit;
+}
+textarea { min-height: 140px; resize: vertical; }
+.alert { padding: 13px 16px; border-radius: 10px; margin-bottom: 18px; }
+.alert-success { background: #eaf8f1; color: var(--success); border: 1px solid #b7e2cd; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+th, td { border-bottom: 1px solid var(--line); padding: 12px; text-align: left; }
+th { background: var(--soft); }
+.site-footer { background: #111827; color: #e5e7eb; padding: 42px 0 24px; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.site-footer p { color: #b7bfcc; }
+.copyright { width: min(1100px,92%); margin: 30px auto 0; padding-top: 20px; border-top: 1px solid #293142; }
+@media (max-width: 820px) {
+ .nav-wrap { align-items: flex-start; flex-direction: column; padding: 16px 0; }
+ .hero-grid, .grid-3, .grid-2, .footer-grid { grid-template-columns: 1fr; }
+ .hero { padding: 50px 0; }
+}
