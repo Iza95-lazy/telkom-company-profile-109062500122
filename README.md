@@ -57,6 +57,7 @@ PS D:\laragon\www\telkom-company-profile> git log --oneline --graph --decorate -
 * b5f316c feat: hubungkan database dan tampilkan program studi
 * a159832 feat: tambahkan layout dasar dan stylesheet
 * 4ab1811 chore: inisalisasi project dan dokumentasi awal
+![hasil git log](images/hasil_git_log.png)
 
 # Simulasi Merge Conflict
 1. Pastikan status working tree bersih/clean
@@ -66,7 +67,7 @@ PS D:\laragon\www\telkom-company-profile> git log --oneline --graph --decorate -
 5. Akan muncul sebuah marker seperti berikut:
 Bagian antara <<<<<<< HEAD dan ======= berasal dari branch aktif. Bagian antara ======= dan >>>>>>> berasal dari branch yang sedang di-merge. Mahasiswa harus menentukan hasil final, lalu menghapus marker conflict.
 
-![alt text](images/Merge_Conflict.png)
+![merge conflict](images/Merge_Conflict.png)
 
 # cara penyelesaiannya:
 1. Pilih teks final, misal "profile" atau "profil"
@@ -74,7 +75,7 @@ Bagian antara <<<<<<< HEAD dan ======= berasal dari branch aktif. Bagian antara 
 3. Ganti teks dengan teks final yang dipilih
 4. Kemudian ketik git add includes/header.php
 5. Lalu commit
-![alt text](images/Yang_fix_ini.png)
+![penyelesaian merge conflict](images/Yang_fix_ini.png)
 
 Alhamdulillah selesai______~Dzaky Rafif Ariza(109062500122)
 
