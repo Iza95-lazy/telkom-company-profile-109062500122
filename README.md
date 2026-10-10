@@ -74,7 +74,7 @@ Bagian antara <<<<<<< HEAD dan ======= berasal dari branch aktif. Bagian antara 
 3. Ganti teks dengan teks final yang dipilih
 4. Kemudian ketik git add includes/header.php
 5. Lalu commit
-![alt text](images/benerin_conflict.png)
+![alt text](images/Yang_fix_ini.png)
 
 Alhamdulillah selesai______~Dzaky Rafif Ariza(109062500122)
 
