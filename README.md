@@ -27,7 +27,7 @@ Website simulasi Company Profile Telkom University yang dibangun menggunakan **H
 - **Version Control**: Git & GitHub
 - **Code Editor**: Visual Studio Code
 
-Hasil dari git log --oneline --graph --decorate --all
+# Hasil dari git log --oneline --graph --decorate --all
 PS D:\laragon\www\telkom-company-profile> git log --oneline --graph --decorate --all
 * a84c000 (HEAD -> main, tag: v1.0.0, origin/main, origin/HEAD) docs: Memberi petunjuk dan kalimat penutup serta nama
 * 54267e4 docs: Commit ulang habis coba coba yang revert commit
@@ -57,6 +57,24 @@ PS D:\laragon\www\telkom-company-profile> git log --oneline --graph --decorate -
 * b5f316c feat: hubungkan database dan tampilkan program studi
 * a159832 feat: tambahkan layout dasar dan stylesheet
 * 4ab1811 chore: inisalisasi project dan dokumentasi awal
+
+# Simulasi Merge Conflict
+1. Pastikan status working tree bersih/clean
+2. Buat branch conflict navbar, lalu pada branch tersebut ubah teks menu profil menjadi "Tentang Kami" pada     inludes/header.php. Kemudian commit perubahan
+3. Kembali ke branch main, lakukan hal yang sama terhadap file includes/header.php pada baris profil, ubah menjadi "Tentang Kampus" lalu commit.
+4. kemudian pake perintah git merge conflict-navbar untuk menggabungkan dengan branch main
+5. Akan muncul sebuah marker seperti berikut:
+Bagian antara <<<<<<< HEAD dan ======= berasal dari branch aktif. Bagian antara ======= dan >>>>>>> berasal dari branch yang sedang di-merge. Mahasiswa harus menentukan hasil final, lalu menghapus marker conflict.
+
+![alt text](images/Merge_Conflict.png)
+
+# cara penyelesaiannya:
+1. Pilih teks final, misal "profile" atau "profil"
+2. Hapus seluruh marker <<<<<<<>>>>>>>
+3. Ganti teks dengan teks final yang dipilih
+4. Kemudian ketik git add includes/header.php
+5. Lalu commit
+![alt text](images/benerin_conflict.png)
 
 Alhamdulillah selesai______~Dzaky Rafif Ariza(109062500122)
 
